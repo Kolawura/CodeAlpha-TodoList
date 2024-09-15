@@ -1,5 +1,5 @@
 body{
-    background-image: url('/public/assets/images/bgImage.jpg');
+    background-image: url('/public/build/assets/images/bgImage.jpg');
     background: linear-gradient(rgb(255, 196, 71), rgb(172, 239, 255),
     rgb(201, 239, 255));
 }
