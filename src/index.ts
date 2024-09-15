@@ -85,13 +85,11 @@ const addTask = (): void => {
       localStorage.setItem("task", JSON.stringify(Tasks));
       setDisplayFooter();
       setNoofTask();
-      console.log(Tasks);
     }
     if (editId) {
       Tasks = Tasks.map((task) =>
         task.id === editId ? { ...task, text: InputValue } : task
       );
-      console.log(Tasks);
       localStorage.setItem("task", JSON.stringify(Tasks));
       editId = null;
       setDisplayFooter();
@@ -108,7 +106,6 @@ const addTask = (): void => {
 const displayTasks = (Tasks: Task[]): void => {
   taskCont.innerHTML = "";
   Tasks.forEach((task) => {
-    console.log(task);
     const taskListCont = document.createElement("div");
     const taskList = document.createElement("ol");
     taskList.classList.add("taskList");

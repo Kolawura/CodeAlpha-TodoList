@@ -41,7 +41,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
         template: './src/index.html',
-        filename: 'templates/bundle.html',
+        filename: 'bundle.html',
         inject: 'body', 
         minify: {
           collapseWhitespace: true,
